@@ -13,7 +13,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.metrics import r2_score
 
 # Read the data
-df_inflation = pd.read_csv('./data/data-exam/US_inflation_rates.csv')
+df_inflation = pd.read_csv('../../../Documents/GitHub/BI-Fall-2023-Exam-Project/Data/US_inflation_rates.csv')
 df_inflation['date'] = pd.to_datetime(df_inflation['date'])
 df_inflation['year'] = df_inflation['date'].dt.year
 year_df_inflation = df_inflation[(df_inflation['year'] >= 1947) & (df_inflation['year'] <= 2023)]
